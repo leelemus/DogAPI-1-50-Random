@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.dogResults {
+    width: 70vw;
+    margin: 0 auto;
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+input {
+    font-size: 2em;
+    line-height: 2em;
+    width: 8em;
+    border: 2px solid teal;
+    text-align: center;
+}
+
+.js-dogNumberButton {
+    width: 6em;
+    line-height: 2em;
+    background-color: aquamarine;
+}
+
+p {
+    font-size: 1em;
+    word-break: break-all;
+}
+
+h1, h2, p, form {
+    text-align: center;
+}
+
+.dogResult {
+    width: 20vw;
+    text-align: center;
+}
+
+.dogImage {
+    max-width: 20vw;
+    max-height: 10vw;
+    margin: 1vw 2vw;
+}
