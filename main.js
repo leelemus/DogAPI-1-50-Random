@@ -1,5 +1,13 @@
 'use strict';
 
+function displayError() {
+    $('.js-imageResults').append(
+        `<div class="dogResult">
+            <p class="dogError">Please input a number between 1 and 50 to see images.</p>
+        </div>`
+    );
+}
+
 function displayResults(responseJson) {
     $('.js-imageResults').append(
         `<div class="dogResult">
@@ -23,7 +31,11 @@ function dogImageGenerator(){
     $('.js-howManyDogs').submit(event => {
         event.preventDefault();
         $('.js-imageResults').html(``);
-        goGetImages();
+        if ($('.js-dogNumber').val() < 1 || $('.js-dogNumber').val() > 50) {
+            displayError();
+        } else {
+            goGetImages();
+        }
     })
 }
 

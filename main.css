@@ -39,7 +39,6 @@ input {
 
 p {
     font-size: 1em;
-    word-break: break-all;
 }
 
 h1, h2, p, form {
@@ -55,4 +54,16 @@ h1, h2, p, form {
     max-width: 20vw;
     max-height: 10vw;
     margin: 1vw 2vw;
+}
+.dogName {
+    line-height: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    word-break: break-all;
+}
+
+.dogError {
+    line-height: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
 }
