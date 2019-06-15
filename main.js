@@ -16,7 +16,7 @@ function goGetImages() {
     fetch(dogCount)
         .then (response => response.json())
         .then (responseJson => responseJson.message.forEach(displayResults))
-        .catch(error => alert('Doh! Something when wrong!'));
+        .catch(error => alert('Doh! Something when wrong! Please try again.'));
 }
 
 function dogImageGenerator(){
