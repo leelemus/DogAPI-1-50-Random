@@ -7,6 +7,7 @@ function displayResults(responseJson) {
             <img src="${responseJson}" class="dogImage">
         </div>`
     );
+    console.log(responseJson);
 }
 
 function goGetImages() {
@@ -18,17 +19,12 @@ function goGetImages() {
         .catch(error => alert('Doh! Something when wrong!'));
 }
 
-function listenButton(){
+function dogImageGenerator(){
     $('.js-howManyDogs').submit(event => {
         event.preventDefault();
         $('.js-imageResults').html(``);
         goGetImages();
     })
 }
-
-function dogImageGenerator() {
-    listenButton();
-}
-
 
 $(dogImageGenerator);
