@@ -63,7 +63,8 @@ h1, h2, p, form {
 }
 
 .dogError {
-    line-height: 1.5em;
+    line-height: 1.8em;
     text-align: center;
     font-family: sans-serif;
+    color:red;
 }
